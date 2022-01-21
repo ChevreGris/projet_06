@@ -2,21 +2,40 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Hello world</title>
+  <title>JustStreamIt</title>
   <link rel="stylesheet" href="main.css">
 </head>
+<header>
+  <ul class="menu">
+    <li>
+        <a href="accueil.html">JustStreamIt</a>
+    </li>
+    <li>
+        <a href="films.html">Accueil</a>
+    </li>
+    <li>
+        <a href="musiques.html">Films</a>
+    </li>
+</ul>
+</header>
 <body>
-    <h1>Hello world</h1>
+    <h1>JustStreamIt</h1>
     <h2>Films les mieux notés :</h2>
+    <button id="top_films_back" onclick="top_films_back()"> <- </button>
+    <button id="top_films_next" onclick="top_films_next()"> -> </button>
     <div id="img_top_films"></div>
     <h2>Films d'Aventures :</h2>
+    <button id="adventure_back" onclick="adventure_back()"> <- </button>
+    <button id="adventure_next" onclick="adventure_next()"> -> </button>
     <div id="img_adventure"></div>
     <h2>Films de Comedy :</h2>
+    <button id="comedy_back" onclick="comedy_back()"> <- </button>
+    <button id="comedy_next" onclick="comedy_next()"> -> </button>
     <div id="img_comedy"></div>
-    <h2>Films Musical :</h2>
+    <h2>Films Musicaux :</h2>
+    <button id="musical_back" onclick="musical_back()"> <- </button>
+    <button id="musical_next" onclick="musical_next()"> -> </button>
     <div id="img_musical"></div>
-    
-    
     <script src="main.js"></script>
 </body>
 </html>
