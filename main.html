@@ -5,37 +5,45 @@
   <title>JustStreamIt</title>
   <link rel="stylesheet" href="main.css">
 </head>
+
 <header>
-  <ul class="menu">
-    <li>
-        <a href="accueil.html">JustStreamIt</a>
-    </li>
-    <li>
-        <a href="films.html">Accueil</a>
-    </li>
-    <li>
-        <a href="musiques.html">Films</a>
-    </li>
-</ul>
+  <div class="menu">
+    <a  href="main.html"><img id="logo" src="img/Capture_d_écran_2022-01-22_à_22.32.13-removebg-preview.png"></a>
+    <nav>
+      <ul>
+        <li><a href="main.html">Accueil</a></li>
+        <li><a href="main.html">Films</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
+
 <body>
-    <h1>JustStreamIt</h1>
+  <div id="content">
+    <h2>Film au hasard! :</h2>
+    <div class="category" id="suggested_films"></div>
     <h2>Films les mieux notés :</h2>
-    <button id="top_films_back" onclick="top_films_back()"> <- </button>
-    <button id="top_films_next" onclick="top_films_next()"> -> </button>
-    <div id="img_top_films"></div>
+    <div class="category" id="img_top_films">
+      <button id="top_films_back" class="button" onclick="top_films_back()"> < </button>
+      <button id="top_films_next" class="button" onclick="top_films_next()"> > </button>
+    </div>
     <h2>Films d'Aventures :</h2>
-    <button id="adventure_back" onclick="adventure_back()"> <- </button>
-    <button id="adventure_next" onclick="adventure_next()"> -> </button>
-    <div id="img_adventure"></div>
+    <div class="category" id="img_adventure">
+      <button id="adventure_back" class="button" onclick="adventure_back()"> < </button>
+      <button id="adventure_next" class="button" onclick="adventure_next()"> > </button>
+    </div>
     <h2>Films de Comedy :</h2>
-    <button id="comedy_back" onclick="comedy_back()"> <- </button>
-    <button id="comedy_next" onclick="comedy_next()"> -> </button>
-    <div id="img_comedy"></div>
+    <div class="category" id="img_comedy">
+      <button id="comedy_back" class="button" onclick="comedy_back()"> < </button>
+      <button id="comedy_next" class="button" onclick="comedy_next()"> > </button>
+    </div>
     <h2>Films Musicaux :</h2>
-    <button id="musical_back" onclick="musical_back()"> <- </button>
-    <button id="musical_next" onclick="musical_next()"> -> </button>
-    <div id="img_musical"></div>
+    <div class="category" id="img_musical">
+      <button id="musical_back" class="button" onclick="musical_back()"> < </button>
+      <button id="musical_next" class="button" onclick="musical_next()"> > </button>
+    </div>
     <script src="main.js"></script>
+  </div>
+  
 </body>
 </html>

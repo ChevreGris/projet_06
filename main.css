@@ -1,3 +1,173 @@
-h1 {
-    color : blue;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: rgb(167, 34, 34);
+    z-index: 10;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    margin: auto;
+    padding-right: 19%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+nav a {
+    font: montserrat;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+    
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: 0.2s;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+#content {
+    position: relative;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+#logo {
+    position: relative;
+    float: left;
+    margin: 0px 36px;
+    width: 120px;
+}
+
+.menu {
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+    width: 220px;
+    display:inline-block;
+    margin: 10px;
+}
+
+.raw_image {
+    display: block;
+    width: 100%;
+
+}
+
+.image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image_overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image_overlay:hover {
+    opacity: 1;
+}
+
+.image_overlay:hover > * {
+    transform: translateY(0);
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.button {
+  background: rgb(167, 34, 34);
+  border-radius: 999px;
+  box-shadow: rgb(167, 34, 34) 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  transition: 0.25s;
+}
+
+.button:hover {
+    background: #dd3b3b;
+  box-shadow: #ff7777 0 10px 20px -10px;
 }
