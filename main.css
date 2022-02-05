@@ -214,3 +214,18 @@ h2 {
     text-decoration: none;
     cursor: pointer;
   } 
+
+  p,
+  dt {
+      font-weight: bold;
+  }
+  
+  dl,
+  dd {
+      font-size: .9rem;
+  }
+  
+  dd {
+      margin-bottom: 1em;
+  }
+  
